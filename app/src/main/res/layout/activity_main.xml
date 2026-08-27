@@ -7,6 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -18,17 +19,27 @@
         android:textSize="250sp"
         />
 
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_toast"
         android:text="@string/btn_toast"
+        android:layout_weight="1"
         />
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_count"
         android:text="@string/btn_count"
+        android:layout_weight="1"
         />
+
+</LinearLayout>
+
 </LinearLayout>
